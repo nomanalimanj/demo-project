@@ -1,7 +1,21 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 <p>
-<%= @comment_on_home_page.each do |t| %>
-<%= t.title %>
+ <table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+ <tbody>
+<% @comment_on_home_page.each do |t| %>
+<tr>
+<td><%= t.title %></td>
+</tr>
 <% end %>
 </p>
+</tbody>
+
+</table>
